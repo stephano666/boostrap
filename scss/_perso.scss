@@ -1,0 +1,84 @@
+$ma-primary-color: #CCCCCC;
+$marge-haute: 2%;
+$pad-interne: 0.75rem;
+$text-center: center;
+$marge-auto: auto;
+$xs-6: 50%;
+
+@mixin police($font-size:62.5%, $font-weight:bold, $font-color:#000){
+	font-size:$font-size;
+	font-weight:$font-weight;
+	color:$font-color;
+}
+
+body{
+	color: $ma-primary-color;
+	@include police(1.5rem, 400);
+	p{
+		color:#000;
+	}
+}
+
+#topNav {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+// centrer verticalement dans la hauteur de la navbar
+$element-height: 60px;
+
+@mixin navbar-vertical-align($element-height) {
+margin-top: (($navbar-height - $element-height) / 2);
+margin-bottom: (($navbar-height - $element-height) / 2);
+}
+
+header{
+	background-color:#ccc;
+	img{
+		filter:grayscale(100%);
+		@include img-fluid;
+	}
+}
+.container{
+	color: $ma-primary-color;
+	margin-top: $marge-haute;
+	display:flex;
+  	flex-wrap: wrap;
+}
+
+a{
+	color: $ma-primary-color;
+}
+
+.alert-perso {
+  	@include alert-variant(#ff4422, #000, #fff);
+  	font-style: italic;
+  	padding:$pad-interne;
+	width:100%;
+	text-align:$text-center;
+	@include clearfix;
+}
+
+.toca{
+	background-color: $ma-primary-color;
+	@include police(1.5vw, 400, #fff);
+	width: 100%;
+	display: flex;
+	div{
+		margin: $marge-auto;
+		padding: $pad-interne;
+	}
+	@media screen and (max-width: 48rem){
+		
+		div{
+			margin: $marge-auto;
+			padding: $pad-interne;
+			width: $xs-6;
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,15 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$brand-primary:#55ccff;
+$enable-rounded:            false;
+
+// Fonts
+
+$font-family-sans-serif: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-h1: 3rem;
+
+
+$enable-flex: true;
