@@ -1,9 +1,11 @@
 $ma-primary-color: #CCCCCC;
+$secondary-color: #000000;
 $marge-haute: 2%;
 $pad-interne: 0.75rem;
 $text-center: center;
 $marge-auto: auto;
 $xs-6: 50%;
+$center: center;
 
 @mixin police($font-size:62.5%, $font-weight:bold, $font-color:#000){
 	font-size:$font-size;
@@ -25,7 +27,9 @@ body{
 }
 
 
-// centrer verticalement dans la hauteur de la navbar
+//centrer verticalement dans la hauteur de la navbar
+
+
 $element-height: 60px;
 
 @mixin navbar-vertical-align($element-height) {
@@ -36,8 +40,12 @@ margin-bottom: (($navbar-height - $element-height) / 2);
 header{
 	background-color:#ccc;
 	img{
-		filter:grayscale(100%);
+		filter:grayscale(50%);
 		@include img-fluid;
+	}
+	.inner{
+		text-align: $center;
+		padding-top:60px;
 	}
 }
 .container{
@@ -49,6 +57,13 @@ header{
 
 a{
 	color: $ma-primary-color;
+	&:hover, &:active, &:focus{
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+	&:visited{
+		color:$secondary-color;
+	}
 }
 
 .alert-perso {
@@ -80,6 +95,15 @@ a{
 	}
 }
 
+// Font Awesome
+$fa-font-path: "../dist/fonts/";
+
+.nav-link{
+	font-size:1.25rem;
+	@media only screen and (min-width:62 em){
+		font-size:1.15rem;
+	}
+}
 
 
 
