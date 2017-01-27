@@ -6,25 +6,30 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-	<title>test title</title>
+	<title>template </title>
 
 	<!-- Bootstrap core CSS -->
-	<link href="dist/css/xxstyles.css" rel="stylesheet">
+	<link href="dist/css/xstyles.css" rel="stylesheet">
     <link href="dist/css/bootstrap.css" rel="stylesheet">
 
 </head>
 <body class="bg-faded">
 
-	<!--tete de gondole encore appellée header-->
+	<!--tete de gondolle encore appellée header-->
 	<header id="first">
         <div class="header-content">
-            <div class="inner">
-                <h1>title h1</h1>
-                <h5 class="wow fadeIn text-normal wow fadeIn">
-	                chapo ou courte decription centrée verticalemment et horizontalement
-	                <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="Card image cap">
-                </h5> 
-                <a href="#one" class="btn btn-primary-outline btn-xl page-scroll wow fadeInUp m-t-3">lien bouton pour lancer la nav</a>
+            <div class="inner" id="under-intro">
+                <!-- <h1>title h1</h1> -->
+                <h1 class="wow fadeIn text-normal">
+	                Découvrez des reproductions d'œuvres d'art <strong>Made in France</strong>
+                </h1>
+                <p>
+                    <!-- <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="Card image cap"> -->
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem neque, aliquet et mi in, ultrices hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sed leo vitae risus molestie maximus et scelerisque tortor. Cras pellentesque elit eu luctus iaculis. Nunc dui augue, sollicitudin non ultricies nec, mattis sed erat. In hac habitasse platea dictumst. Maecenas ligula odio, consequat sit amet arcu vitae, feugiat tempor eros. Integer a diam convallis, finibus felis et, fringilla neque. Fusce eget feugiat sem.
+                </p>
+                <a href="#one" class="btn btn-primary-outline btn-xl page-scroll wow fadeInUp m-t-3">
+                    lien bouton pour lancer la nav
+                </a>
             </div>
         </div>
     </header>
@@ -35,29 +40,38 @@
             <button class="navbar-toggler hidden-md-up float-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
                 ☰
             </button>
-            <a class="navbar-brand page-scroll" href="#first">logo here</a>
+            <a class="navbar-brand col-6 col-sm-4 col-md-3 page-scroll " href="#first">
+                <picture>
+                  <source media="(max-width:34em)" srcset="images/2017logo-s.png">
+                  <img src="images/2017logo.png" alt="Koz Gallerie" class="img-fluid">
+                </picture>
+            </a>
             <div class="collapse navbar-collapse" id="collapsingNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#one">Cards link</a>
+                        <a class="nav-link page-scroll" href="#one">Les oeuvres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#two">Flexbox</a>
+                        <a class="nav-link page-scroll" href="#two">Bio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#three">
-                        	5 Tiers
-                        	<i class="icon-camera-retro"></i> icon-camera-retro
+                        	Acheter en ligne
                         </a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link page-scroll" href="#four">More</a>
                     </li> -->
                 </ul>
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav push">
                     <li class="nav-item">
                         <a class="nav-link page-scroll" data-toggle="modal" title="À propos" href="#aboutModal">
-							link
+							Les CGV
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" data-toggle="modal" title="Nous contacter" href="#aboutModal">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -67,7 +81,7 @@
 
 	<section id="one">
         <div class="container wow fadeInUp">
-			<h2>Sous titre cards</h2>
+			<h2>Les dernières oeuvres</h2>
             <p class="lead">
 				<i class="icon-twitter"></i>
                 What you notice first in <a href="http://v4-alpha.getbootstrap.com/">Bootstrap 4</a> is that <code>.panel</code> and <code>.well</code> have been replaced by the <code>.card</code>. This makes a lot of sense as "cards" are one of the more well known trends in responsive design.
@@ -76,27 +90,83 @@
             <div class="card-group">
                 <!-- card -->
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/beaubourg.jpg" alt="Beaubourg vision du futur - 1994 - huile sur toile - dimensions xx x xx">
                     <div class="card-block">
-                        <h4 class="card-title">Consise</h4>
+                        <h3 class="card-title">
+                            Beaubourg vision du futur...
+                        </h3>
+                        <h4 class="card-subtitle">huile sur toile / 1994</h5>
+                        <h4>
+                            <div class="btn-group">
+                              <a class="btn btn-default" href="#">
+                                <i class="fa fa-file-text-o" title="Informations"></i>
+                              </a>      
+                              <!-- <a class="btn btn-default" href="#">
+                                <i class="fa fa-eye" title="Découvrir"></i>
+                              </a> -->
+                              <a class="btn btn-default" href="#ancre">
+                                <i class="fa fa-comments-o" title="VOir les commentaires" ></i>
+                              </a>
+                              <a class="btn btn-default" href="#">
+                                 <i class="fa fa-shopping-basket" title="Ajouter au panier" ></i>
+                               </a>
+                            </div>
+                        </h4>
                         <p class="card-text">Cards are a good way to display content composed of different types of objects. They’re well-suited for presenting similar objects whose size or supported actions vary, like headings and photos with captions.</p>
                     </div>
                 </div>
                 <!-- card -->
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample19.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/tablo1.jpg" alt="La déclaration - 1998 - huile sur toile - dimensions xx x xx">
                     <div class="card-block">
-                        <h4 class="card-title">Grouped</h4>
+                        <h4 class="card-title">
+                            <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            La déclaration
+                        </h4>
+                        <h5 class="card-subtitle">mon sosutitre </h5>
+                        <p class="card-text">Cards are a good way to display content composed of different types of objects. They’re well-suited for presenting similar objects whose size or supported actions vary, like headings and photos with captions.</p>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="images/theatre.jpg" alt="Le petit théatre de marionnettes - 1997 - huile sur toile - dimensions xx x xx">
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            Le théatre de marionnettes
+                        </h4>
                         <p class="card-text">Use card groups to render equal height cards without gutters between the cards. Use <code>.card-deck</code> for cards that aren’t attached to each another.</p>
                     </div>
                 </div>
                 <!-- card -->
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample14.jpg" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="images/oiseaux.jpg" alt="Les oiseaux - 1996">
                     <div class="card-block">
-                        <h4 class="card-title">Same Height</h4>
+                        <h4 class="card-title">Les oiseaux</h4>
                         <p class="card-text">A frequent problem occurs when you have multiple items in a row with content of varying height. Thanks to flexbox (and display:table) we now have equal height cards!</p>
                         
+                    </div>
+                </div>
+                 <!-- card -->
+                <!-- <div class="card">
+                    <img class="card-img-top img-fluid" src="images/abstract70.jpg" alt="Composition abstraite - 1970">
+                    <div class="card-block">
+                        <h4 class="card-title">Composition abstraite 1970</h4>
+                        <p class="card-text">A frequent problem occurs when you have multiple items in a row with content of varying height. Thanks to flexbox (and display:table) we now have equal height cards!</p>
+                    </div>
+                </div> -->
+                 <!-- card -->
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="images/tablo1.jpg" alt="La déclaration - 1998 - huile sur toile - dimensions xx x xx">
+                    <div class="card-block">
+                        <h4 class="card-title">
+                            <!-- <i class="fa fa-file-image-o" aria-hidden="true"></i> -->
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            title
+                        </h4>
+                        <h5 class="card-subtitle">mon sosutitre </h5>
+                        <p class="card-text">Cards are a good way to display content composed of different types of objects. They’re well-suited for presenting similar objects whose size or supported actions vary, like headings and photos with captions.</p>
                     </div>
                 </div>
             </div>
