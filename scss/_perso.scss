@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+=======
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 $primary-color: #CCCCCC;
 $secondary-color: #000000;
 $tierce-color: #f7f7f7;
 $blue-color:#347BA5;
 
+<<<<<<< HEAD
 $marge-haute: 1%;
 $marge-haute2: 2rem;
 $pad-interne: .75rem;
+=======
+$marge-haute: 2%;
+$pad-interne: 0.75rem;
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 $text-center: center;
 $marge-auto: auto;
 $xs-6: 50%;
@@ -15,8 +23,11 @@ $center: center;
 $totalwidth: 100%;
 $pointer: pointer;
 $left: left;
+<<<<<<< HEAD
 $font-family-base:'Open Sans', sans-serif;
 $max-width:1100px;
+=======
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 
 @mixin police($font-size:62.5%, $font-weight:bold, $font-color:#000){
 	font-size:$font-size;
@@ -26,12 +37,19 @@ $max-width:1100px;
 }
 
 body{
+<<<<<<< HEAD
 	font-family: $font-family-base;
 	color: $primary-color;
 	@include police(1.5rem, 400, #333);
 	p{
 		color:$secondary-color;
 		@include police(1rem, 400, #000);
+=======
+	color: $primary-color;
+	@include police(1.5rem, 400);
+	p{
+		color:$secondary-color;
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 	}
 	a{
 		color: $blue-color;
@@ -60,6 +78,7 @@ header{
 		filter:grayscale(50%);
 		@include img-fluid;
 	}
+<<<<<<< HEAD
 	.inner{
 		text-align: $center;
 		padding-top:60px;
@@ -81,6 +100,14 @@ header{
 			width: $max-width;
 			margin:0 $marge-auto;
 			padding:$pad-interne;
+=======
+	header-content {
+		position: relative;
+		max-width:800px;
+		.inner{
+			text-align: $center;
+			padding-top:60px;
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 		}
 	}
 }
@@ -98,14 +125,20 @@ a{
 }
 
 
+<<<<<<< HEAD
 $font-size-sm: .985rem;
 $font-size-xs: .75rem;
+=======
+$font-size-sm: 0.975rem;
+$font-size-xs: 0.75rem;
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 
 .navbar {
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0 $pad-interne;
     .container{
+<<<<<<< HEAD
     	@include media-breakpoint-down(sm) {
 	    	width: $totalwidth;
     		padding: .25rem 0 0;
@@ -134,6 +167,24 @@ $font-size-xs: .75rem;
 		}
 		img{max-width:160px;}
 	}
+=======
+    	padding:auto;
+    	@include media-breakpoint-down(sm) {
+	    	width: $totalwidth;
+    		padding: 1.25rem 0 0;
+		}
+    }
+    
+    .navbar-toggler{
+    	border:$primary-color;
+    	cursor:$pointer;
+    	@include hover-focus {
+		    color: $blue-color;
+		    text-decoration: none;
+		    opacity: .95;
+		  }
+    }
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
     
 }
 
@@ -154,6 +205,7 @@ $nav-border-width: 1px;
 		color: $blue-color;
 	  	}
     }
+<<<<<<< HEAD
 }
 
 .push .nav-item:last-child{
@@ -172,9 +224,23 @@ section{
 	margin-top:$marge-haute2;
 }
 
+=======
+}
+
+.push .nav-item:last-child{
+  border-bottom:0;
+}
+
+header .inner {
+	text-align: center;
+	padding-top: 60px;
+}
+
+
+>>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 
 // Font Awesome
-$fa-font-path: "../dist/fonts/";
+//$fa-font-path: "../dist/fonts/";
 
 .nav-link{
 	font-size:1.25rem;
@@ -267,6 +333,7 @@ $card-spacer:.5rem;
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
 	border-radius: 0;
 }
+
 
 
 
