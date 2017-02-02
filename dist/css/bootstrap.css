@@ -12159,21 +12159,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 body {
   font-family: "Open Sans", sans-serif;
   color: #CCCCCC;
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #333;
-  margin-bottom: 0.5rem;
 }
 
 body p {
   color: #000000;
-<<<<<<< HEAD
   font-size: 1rem;
   font-weight: 400;
   color: #000;
   margin-bottom: 0.5rem;
-=======
->>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 }
 
 body a {
@@ -12200,7 +12193,6 @@ header img {
   height: auto;
 }
 
-<<<<<<< HEAD
 header .inner {
   text-align: center;
   padding-top: 60px;
@@ -12222,10 +12214,11 @@ header #under-intro {
 }
 
 header h1 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* @include text-truncate; */
   width: 75vw;
+  color: #000000;
+  line-height: 120%;
+  font-size: 2rem;
 }
 
 @media (min-width: 1200px) {
@@ -12233,8 +12226,11 @@ header h1 {
     width: 1100px;
     margin: 0 auto;
     padding: 0.75rem;
+    margin-top: 2rem;
+    font-size: 2.75rem;
   }
-=======
+}
+
 header header-content {
   position: relative;
   max-width: 800px;
@@ -12243,29 +12239,14 @@ header header-content {
 header header-content .inner {
   text-align: center;
   padding-top: 60px;
->>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
-}
-
-a {
-  color: #CCCCCC;
-}
-
-a:hover, a:active, a:focus {
-  text-decoration: underline;
-  text-transform: none;
-}
-
-a:visited {
-  color: #CCCCCC;
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 0.75rem;
 }
 
-<<<<<<< HEAD
 @media (max-width: 767px) {
   .navbar .container {
     width: 100%;
@@ -12303,31 +12284,6 @@ a:visited {
   }
 }
 
-.navbar .navbar-nav > .nav-item {
-  text-transform: none;
-}
-
-@media (max-width: 767px) {
-  .navbar .navbar-nav > .nav-item {
-    margin-bottom: 0;
-    border-bottom: 1px solid #CCCCCC;
-  }
-}
-
-.navbar .navbar-nav > .nav-item a {
-  font-size: 0.985rem;
-=======
-.navbar .container {
-  padding: auto;
-}
-
-@media (max-width: 767px) {
-  .navbar .container {
-    width: 100%;
-    padding: 1.25rem 0 0;
-  }
-}
-
 .navbar .navbar-toggler {
   border: #CCCCCC;
   cursor: pointer;
@@ -12337,6 +12293,19 @@ a:visited {
   color: #347BA5;
   text-decoration: none;
   opacity: .95;
+}
+
+a {
+  color: #CCCCCC;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+  text-transform: none;
+}
+
+a:visited {
+  color: #CCCCCC;
 }
 
 .navbar .navbar-nav > .nav-item {
@@ -12352,7 +12321,6 @@ a:visited {
 
 .navbar .navbar-nav > .nav-item a {
   font-size: 0.975rem;
->>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
   color: #000000;
   text-align: left;
 }
@@ -12367,7 +12335,6 @@ a:visited {
 
 header .inner {
   text-align: center;
-<<<<<<< HEAD
   padding-top: 6rem;
 }
 
@@ -12379,9 +12346,15 @@ header .inner {
 
 section {
   margin-top: 2rem;
-=======
+}
+
+.push .nav-item:last-child {
+  border-bottom: 0;
+}
+
+header .inner {
+  text-align: center;
   padding-top: 60px;
->>>>>>> 6f8b820e8070d8c9cb7f72243a81acc175e2b9d7
 }
 
 .nav-link {
@@ -12415,9 +12388,6 @@ section {
 
 .card {
   margin: 0.5rem;
-  /* &:last-child {
-    margin-right: 0;
-  } */
 }
 
 .card:first-child {
@@ -12500,9 +12470,6 @@ section {
 
 .btn-default .fa {
   color: #000000;
-  /*&:hover, &:active, &:focus{
-	    color: $blue-color;
-	  }*/
 }
 
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
